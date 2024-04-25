@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Start | PC Simulator</title>
+    <link rel="stylesheet" href="https://unpkg.com/xp.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body onmousemove="coordinate(event)" id="body">
+    <div class="window-container">
+        <div class="window" style="width: 300px" draggable="true">
+            <div class="title-bar">
+                <div class="title-bar-text">PC Simulator</div>
+                <div class="title-bar-controls">
+                    <button aria-label="Minimize"></button>
+                    <button aria-label="Maximize"></button>
+                    <button aria-label="Close" onclick="closePCSimMessage()"></button>
+                </div>
+            </div>
+            <div class="window-body">
+                <p>Do You Have A Save File?</p>
+                <button onclick=yes('sf')>Yes</button><button onclick=no('sf')>No</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
